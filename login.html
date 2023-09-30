@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tecnósfera</title>
+    <title>LogIn</title>
     <link rel="stylesheet" href="css/estilos.css">
     <script src="https://kit.fontawesome.com/56cde7d9be.js" crossorigin="anonymous"></script>
     <link rel="shorcut icon" href="img/tecno.png" type="image/x">
-    </head>
-<body>
+</head>
+<body id="body">
     <header>
         <div class="contenedor-header">
-            <img src="img/logo1_B.svg" alt="Tecnósfera">
+            <a class= "nav" href="/index.html"> <img src="img/logo1_A.svg" width="100" alt="Tecnósfera">
             <nav>
                 <ul>
                     <li><a class="nav" href="catalogo.html">Noticias</a></li>
@@ -28,38 +28,24 @@
             </form>
         </div>
     </header>
+
     <main role="main">
-        <section id="bienvenida">
-            <h1 class="bienvenida-titulo">Bienvenidos a Tecnósfera</h1>
-        </section>
-        <section id="novedades">
-            <h1>Novedades</h1>
-            <div class="contenedor-novedades">
-                <article>
-                    <img src="img/01_art01.png" alt="Título Artículo 1">
-                    <h2>Pablo</h2>
-                    <h3>Título Artículo 1</h3>
-                    <a class="novedades" href="#">Ver más</a>
-                </article>
-                <article>
-                    <img src="img/01_art01.png" alt="Título Artículo 2">
-                    <h2>Pedro</h2>
-                    <h3>Título Artículo 2</h3>
-                    <a class="novedades" href="#">Ver más</a>
-                </article>
-                <article>
-                    <img src="img/01_art01.png" alt="Título Artículo 3">
-                    <h2>Carlos</h2>
-                    <h3>Título Artículo 3</h3>
-                    <a class="novedades" href="#">Ver más</a>
-                </article>
-                <article>
-                    <img src="img/01_art01.png" alt="Título Artículo 4">
-                    <h2>Lucas</h2>
-                    <h3>Título Artículo 4</h3>
-                    <a class="novedades" href="/articulo1.html">Ver más</a>
-                </article>                
-            </div>
+        <section id="logIn">
+            <h1>Ingresar con mi usuario</h1>
+            <p>(Tu usuario es el email que usaste a la hora de registrarte)</p>
+            <form class="formulario" action="" method="POST">
+                <label for="usuario">Mi usuario</label>
+                <input title="Tip: Podés usar el email con el que te registraste en nuestra página." type="text" id="usuario" placeholder="Mi usuario" required>
+                <label for="password">Mi contraseña</label>
+                <input type="password" placeholder="Mi contraseña" required>
+                <label class="sr-only" for="ingresar"></label>
+                <label for="login" class="sr-only">Ingresar | Log In</label>
+                <input class="submit" type="submit" id="login" value="Ingresar">
+            </form>
+            <ul>
+                <li> <a href="">¿Olvidaste tu contraseña?</a></li>
+                <li> <a href="registro.html">Aún no tengo usuario, quiero registrarme</a></li>
+            </ul>
         </section>
     </main>
 

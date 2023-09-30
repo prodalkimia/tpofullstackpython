@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color-negro:#000000;
+    --color-blanco:#FFFFFF;
+    --color-celeste-1:#b8e3e9;
+    --color-azulverdo:#28a0b3;
+    --color-azuloscuro:#042b31;
+    --color-gris1:#6E6E6E;
+    --color-celeste-2:#17DEFC;
+}
+
+/* Estilos globales */
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    color: var(--color-negro);
+    background-color: var(--color-celeste-1);
+    margin: 0;
+    line-height: 1.5;
+}
+
+section {
+    width: 1250px;
+    text-align: center;
+    margin: 25px auto;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* Encabezado, barra de navegación */
+header {
+    background-color:var(--color-azuloscuro);
+    text-align: center;
+    padding: 35px 0 20px;
+}
+
+header ul,
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0;
+}
+
+header li,
+footer li {
+    display: inline-block;
+    margin: 8px;
+}
+
+.contenedor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1250px;
+    margin: 0 auto;
+}
+
+/* Links barra de navegación */
+a.nav:link, a.nav:visited {
+    color: var(--color-blanco);
+    display: inline-block;
+    margin: 0 16px;
+}
+
+a.nav:hover, a.nav:active {
+    color: var(--color-celeste-2);
+}
+
+/* Sección de Bienvenida y Novedades */
+#bienvenida {
+    height: 650px;
+
+    background-image: url('../img/tecno11B.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bienvenida-titulo {
+    background-color: rgba(38, 36, 43, 0.5);
+    color: var(--color-celeste-1);
+    padding: 32px;
+}
+
+/* Novedades */
+.contenedor-novedades {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+article {
+    flex-basis: 247px;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a.novedades:link,
+a.novedades:visited {
+    display: block;
+    color: var(--color-negro);
+    text-decoration: none;
+    border: 3px solid var(--color-celeste-2);
+    padding: 12px 24px;
+    border-radius: 16px;
+}
+
+a.novedades:hover,
+a.novedades:active {
+    background-color: var(--color-celeste-2);
+    border: 3px solid var(--color-negro);
+}
+
+/* Tarjetas */
+
+.card {
+    position:relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px var(--color-negro);
+}
+
+.card .front img {
+    position: static;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: var(--color-blanco);
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: var(--color-azuloscuro);
+    padding: 15px;
+    color: var(--color-blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card .back .link {
+    border-top: solid 1px var(--color-blanco);
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back .link a {
+    color: var(--color-blanco);
+}
+
+.card .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .back p {
+    letter-spacing: 1px;
+} 
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/* Footer, Pié de página */
+footer {
+    background-color: var(--color-gris1);
+    color: var(--color-celeste-1);
+    font-weight: 600;
+    line-height: 1.8;
+    text-align: center;
+
+    padding-top: 75px;
+    height: 250px;
+}
+
+
+.contenedor-redes{
+    position: relative;
+    top:35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-redes ul li{
+    display: inline-block;
+    margin: 0px 30px 0px 10px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.contenedor-redes ul li a{
+    display: block;
+    padding: 0 10px;
+    line-height: 40px;
+    color: var(--color-azulverdo);
+    background-color: var(--color-azuloscuro);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    transition: .2s;
+}
+
+.contenedor-redes ul li a:hover{
+    transform: translatey(-5px) scale(1.1);
+}
+
+.contenedor-redes ul li .facebook:hover{
+    background-color: var(--color-celeste-2);
+}
+.contenedor-redes ul li .instagram:hover{
+    background-color: var(--color-celeste-2);
+}
+.contenedor-redes ul li .whatsapp:hover{
+    background-color: var(--color-celeste-2);
+}
+
+
+/*-------------- Formularios --------------*/
+
+/* Formulario de búsqueda */
+.buscar > input {
+    margin-top: 10px;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 3px solid var(--color-celeste-2);
+}
+
+.buscar > button {
+    margin-top: 10px;
+    padding: 12px 15px;
+    border-radius: 10px;
+    background-color: var(--color-azulverdo);
+    border: 3px solid var(--color-celeste-2);
+}
+
+.buscar > input:focus,
+.buscar > button:focus {
+    outline: none;
+    border: 3px solid var(--color-azulverdo);
+}
+
+/* Login, Contacto, Registro */
+.formulario label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.formulario input,
+.formulario textarea,
+.formulario select {
+    display: block; /* agrega los saltos de línea*/
+    width: 450px; /* ancho */
+    margin: 15px auto; /* centra el elemento */
+
+    padding: 10px; /* área del texto */
+
+    border-radius: 0px;  /* ajuste del radio de las esquinas */
+    border: none;
+    border-bottom: 2px solid var(--color-celeste-2);
+
+    outline: none;
+}
+
+.formulario input:focus,
+.formulario textarea:focus,
+.formulario select:focus {
+    border-bottom: 2px solid var(--color-azulverdo);
+}
+
+.formulario textarea {
+    height: 200px;
+}
+
+.formulario .opciones {
+    display: inline-block; /* línea bloque, no tiene saltos de línea y el ancho del elemento es fijado por su contenido. */
+    width: auto;
+    margin: 5px;
+}
+
+.formulario .submit {
+    background-color: var(--color-azulverdo);
+    font-weight: 700;
+    border: none;
+}
+
+/* Exito */
+#exito {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* articulos, detalle */
+#articulos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#articulos img {
+    width: 80%;
+    max-width: 360px;
+    margin-right: 30px;
+}
+
+.derecha {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 600px;
+    gap: 16px;
+}
+
+.derecha > ul {
+    list-style: none;
+    padding: 0;
+}
+
+.derecha > ul > li {
+    display: inline-block;
+}
+
+#articulos h1, 
+#articulos h2,
+#articulos h3, 
+#articulos p, 
+#articulos ul {
+    margin: 0;
+    padding: 0;
+}
+
+#articulos h3 {
+    font-size: 36px;
+    color: var(--color-negro);
+    font-weight: 400;
+}
+
+#articulos i {
+    font-size: 20px;
+    color: var(--color-celeste-2);
+    margin-right: 16px;
+}
+
+#articulos i:hover {
+    color: var(--color-azulverdo);
+    cursor: pointer;
+}
+
+#articulos p {
+    line-height: 22px;
+}
+
+#articulos button {
+    background-color: var(--color-celeste-1);
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    color: var(--negro);
+    border: 2px solid var(--color-azulverdo);
+    border-radius: 16px;
+    padding: 15px 25px;
+}
+
+#articulos button:hover {
+    background-color: var(--color-azulverdo);
+    border-color: var(--color-negro);
+}
+
+/* Catálogo */
+#catalogo table {
+    margin: 0 auto;
+    width: 1250px;
+}
+
+#catalogo img {
+    width: 100%;
+}
+
+#catalogo th, td {
+    padding: 16px;
+}
+
+#catalogo th {
+    background-color: var(--color-azulverdo);
+}
+
+#catalogo td {
+    background-color: var(--color-gris1);
+}
+
+#catalogo tr:nth-child(odd) td {
+    background-color: var(--color-celeste-2);
+}
+
+#catalogo tr:hover td {
+    background-color: var(--color-azulverdo);
+}
+
+/* Sobre Nosotros */
+.contenido {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 16px;
+    padding-top: 32px;
+}
+
+.direccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.direccion > ul {
+    list-style: none;
+    padding: 0;
+}
+
+.direccion > ul > li {
+    display: inline-block;
+}
+
+#sobrenosotros video {
+    width: 65%;
+    height: auto;
+}
+
+#sobrenosotros p {
+    line-height: 20px;
+}
+
+#sobrenosotros i {
+    font-size: 32px;
+    margin-right: 32px;
+}
+
+#sobrenosotros iframe {
+    display: block;
+    width: 1250px;
+    margin: 32px auto;
+    border: none;
+    height: 600px;
+}
