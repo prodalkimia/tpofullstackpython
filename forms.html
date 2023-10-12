@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://kit.fontawesome.com/56cde7d9be.js" crossorigin="anonymous"></script>
+    <link rel="shorcut icon" href="img/tecno.png" type="image/x">
+    <title>Contacto</title>
+</head>
+<body>
+
+    <header>
+        <div class="contenedor-header">
+            <a class= "nav" href="/index.html"> <img src="img/logo1_A.svg" width="100" alt="Tecnósfera">
+            <nav>
+                <ul>
+                    <li><a class="nav" href="catalogo.html">Noticias</a></li>
+                    <li><a class="nav" href="sobrenosotros.html">Nosotros</a></li>
+                    <li><a class="nav" href="forms.html">Contacto</a></li>
+                    <li><a class="nav" href="login.html">Login</a></li>
+                </ul>
+            </nav>
+            <form class="buscar" action="" method="GET">
+                <label for="busqueda"></label>
+                <input id="busqueda" name="busqueda" type="text" placeholder="Buscá tu artículo">
+                <button id="buscar" name="buscar" aria-label="buscar contenido"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+    </header>    
+
+    <div class="text-center">
+        <h1 class="py-3">Contáctanos</h1>
+    </div>
+
+    <div class="container">    
+        <form class="row g-2">
+
+            <div class="col-6">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" id="nombre" class="form-control" placeholder="Nombre" required>
+            </div>
+
+            <div class="col-6">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
+            </div>
+
+            <div class="col-6">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="email@ejemplo.com" required>
+            </div>
+            <div class="col-6">
+                <label for="fecha" class="form-label">Fecha de nacimiento</label>
+                <input type="date" id="fecha" class="form-control" required>
+            </div>
+
+            <div class="col-4">
+                <label for="pais" class="form-label">País</label>
+                <input type="text" class="form-control" id="pais" placeholder="País" required>
+            </div>
+
+            <div class="col-4">
+                <label for="ciudad" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="ciudad" placeholder="Ciudad" required>
+            </div>
+
+            <div class="col-4">
+                <label for="cp" class="form-label">Código Postal</label>
+                <input type="number" class="form-control" id="cp" placeholder="Ej: 4000" required>
+            </div>
+
+            <div class="col-6">
+                <label for="rama" class="form-label">Rama de la tecnología de tu interés</label>
+                <input class="form-control" list="lista" placeholder="Ej: Desarrollo web Full-Stack" required>
+                <datalist id="lista">
+                    <option value="Desarrollo web Full-Stack">
+                    <option value="Desarrollo web Front-End">
+                    <option value="Desarrollo web Back-End">
+                    <option value="Inteligencia Artificial">
+                    <option value="Aplicaciones móviles">
+                    <option value="Aplicaciones de escritorio">
+                    <option value="Desarrollo de videojuegos">
+                    <option value="Seguridad informática">
+                    <option value="Administrador de base de datos">
+                    <option value="Otra">                        
+                </datalist>                                       
+            </div>
+
+            <div class="col-6">
+                <label for="rama" class="form-label">Otra (opcional)</label>
+                <input type="text" id="rama" class="form-control">
+            </div>
+
+            <div class="col-12">
+                <label for="mensaje" class="form-label">Mensaje (opcional)</label>
+                <textarea id="mensaje" class="form-control" maxlength="100" placeholder="Máx 100 carácteres"></textarea>
+            </div>
+
+            <div class="col-12">
+                <div class="form-check">
+                    <input type="checkbox" id="check" class="form-check-input" required>
+                    <label for="check" class="form-check-label">Acepto los términos y condiciones</label>
+                </div>
+            </div>
+
+            <div class="col-12 text-center mb-5">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="reset" class="btn btn-primary">Borrar</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div class="contenedor-redes">
+            <ul>
+                <li><a href="https://www.facebook.com/" target="_blank" class="facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=5453325562&text=Hola,%20quisiera%20informacion%20sobre%20su%20producto" class="whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>                
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>
