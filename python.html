@@ -1,43 +1,26 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tecnósfera</title>
     <link rel="stylesheet" href="css/estilos.css">
     <script src="https://kit.fontawesome.com/56cde7d9be.js" crossorigin="anonymous"></script>
-    <link rel="shorcut icon" href="img/tecno.png" type="image/x">
+    <link rel="shorcut icon" href="img/icono.png" type="image/x">
+    <title>La Inteligencia Artificial en SpaceX</title>
 </head>
 <body>
-    <header>
-        <div class="contenedor-header">
-            <img src="img/tecnosfera1.png" alt="Tecnósfera">
-            <nav>
-                <ul>
-                    <li><a class="nav" href="index.html">Home</a></li>
-                    <li><a class="nav" href="catalogo.html">Noticias</a></li>
-                    <li><a class="nav" href="sobrenosotros.html">Nosotros</a></li>
-                    <li><a class="nav" href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-            <form class="buscar" action="" method="GET">
-                <label for="busqueda"></label>
-                <input id="busqueda" name="busqueda" type="text" placeholder="Buscá tu artículo">
-                <button id="buscar" name="buscar" aria-label="buscar contenido"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
-        </div>
-    </header>
-
+<header id="idheader"></header>
 
     <main role="main">
-        <section id="articulos">
+        
 
-            <img src="img/python.png" alt="Lenguaje Python">
-            <div class="derecha">
-                <h2>Pedro Unzué</h2>
-
-                <h1>Python: Un Viaje a Través de su Historia y una mirada al Futuro</h1>
+        <div class="container-art">
+            <h2>Pedro Unzué</h2>
+            
+            <h1>Python: Un Viaje a Través de su Historia y una mirada al Futuro</h1>
+            <div class="centrar">
+                <img class="imagen1" src="img/python.png" alt="Lenguaje Python">
+            </div>
 
                 <h2>Introducción</h2>
                 <p>
@@ -140,19 +123,10 @@
                     no solo tiene historia, ¡sino también un emocionante futuro por delante!
                 </p>
             </div>
-        </section>
+        
     </main>
 
-    <footer>
-        <div class="contenedor-redes">
-            <ul>
-                <li><a href="https://www.facebook.com/" target="_blank" class="facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="https://www.instagram.com" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://api.whatsapp.com/send?phone=5453325562&text=Hola,%20quisiera%20informacion%20sobre%20su%20producto" class="whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
-                <p>@Todos los derechos reservados 2023 - Tecnosfera</p>                
-            </ul>
-        </div> 
-    </footer>
+    <footer id="idfooter"></footer>
+<script src="js/script.js"></script>
 </body>
-
 </html>

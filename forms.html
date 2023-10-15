@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
+    
     <script src="https://kit.fontawesome.com/56cde7d9be.js" crossorigin="anonymous"></script>
     <link rel="shorcut icon" href="img/tecno.png" type="image/x">
     <title>Contacto</title>
 </head>
 <body>
-
+<!--
     <header>
         <div class="contenedor-header">
-            <img src="img/tecnosfera1.png" alt="Tecnósfera">
+            <a class= "nav" href="/index.html"> <img src="img/Tecnosfera2.png" width="100" alt="Tecnósfera">
             <nav>
                 <ul>
-                    <li><a class="nav" href="index.html">Home</a></li>
                     <li><a class="nav" href="catalogo.html">Noticias</a></li>
                     <li><a class="nav" href="sobrenosotros.html">Nosotros</a></li>
-                    <li><a class="nav" href="contacto.html">Contacto</a></li>
+                    <li><a class="nav" href="forms.html">Contacto</a></li>
+                    
                 </ul>
             </nav>
             <form class="buscar" action="" method="GET">
@@ -29,13 +30,14 @@
             </form>
         </div>
     </header>    
-
+-->
+<header id="idheader"></header>
     <div class="text-center">
         <h1 class="py-3">Contáctanos</h1>
     </div>
 
     <div class="container">    
-        <form class="row g-2">
+        <form class="row g-2" action="#" method="post">
 
             <div class="col-6">
                 <label for="nombre" class="form-label">Nombre</label>
@@ -47,32 +49,29 @@
                 <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
             </div>
 
-            <div class="col-6">
+            <div class="col-sm-6 col-12">
                 <label for="email" class="form-label">Correo electrónico</label>
                 <input type="email" class="form-control" id="email" placeholder="email@ejemplo.com" required>
             </div>
-            <div class="col-6">
+            <div class="col-sm-6">
                 <label for="fecha" class="form-label">Fecha de nacimiento</label>
                 <input type="date" id="fecha" class="form-control" required>
             </div>
 
-            <div class="col-4">
+            <div class="col-6">
                 <label for="pais" class="form-label">País</label>
                 <input type="text" class="form-control" id="pais" placeholder="País" required>
             </div>
 
-            <div class="col-4">
+            <div class="col-6">
                 <label for="ciudad" class="form-label">Ciudad</label>
                 <input type="text" class="form-control" id="ciudad" placeholder="Ciudad" required>
             </div>
 
-            <div class="col-4">
-                <label for="cp" class="form-label">Código Postal</label>
-                <input type="number" class="form-control" id="cp" placeholder="Ej: 4000" required>
-            </div>
+            
 
-            <div class="col-6">
-                <label for="rama" class="form-label">Rama de la tecnología de tu interés</label>
+            <div class="col-sm-6">
+                <label for="rama" class="form-label">Campo tecnológico favorito</label>
                 <input class="form-control" list="lista" placeholder="Ej: Desarrollo web Full-Stack" required>
                 <datalist id="lista">
                     <option value="Desarrollo web Full-Stack">
@@ -88,8 +87,8 @@
                 </datalist>                                       
             </div>
 
-            <div class="col-6">
-                <label for="rama" class="form-label">Otra (opcional)</label>
+            <div class="col-sm-6">
+                <label for="rama" class="form-label">Otra(opcional)</label>
                 <input type="text" id="rama" class="form-control">
             </div>
 
@@ -111,17 +110,18 @@
             </div>
         </form>
     </div>
-
+<!--
     <footer>
         <div class="contenedor-redes">
             <ul>
                 <li><a href="https://www.facebook.com/" target="_blank" class="facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
                 <li><a href="https://www.instagram.com" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://api.whatsapp.com/send?phone=5453325562&text=Hola,%20quisiera%20informacion%20sobre%20su%20producto" class="whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
-                <p>@Todos los derechos reservados 2023 - Tecnosfera</p>                
-            </ul>
-        </div> 
+                <li><a href="https://api.whatsapp.com/send?phone=5453325562&text=Hola,%20quisiera%20informacion%20sobre%20su%20producto" class="whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>                
+            </ul>            
+        </div>
     </footer>
-    
+-->
+<footer id="idfooter"></footer>
+<script src="js/script.js"></script>    
 </body>
 </html>

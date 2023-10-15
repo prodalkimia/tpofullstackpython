@@ -19,7 +19,7 @@
 
 body {
     color: var(--color-negro);
-    background-color: var(--color-celeste-1);
+    background-color: var(--color-blanco);
     margin: 0;
     line-height: 1.5;
 }
@@ -47,22 +47,83 @@ h3 {
     margin: 0;
 }
 
+.autor{
+    text-align: center;
+}
+.container-art{
+    max-width: 1400px;    
+    margin: 20px;
+    
+}
+.container-art h1,h2{
+    text-align: center;
+}
+.container-art p{
+    text-align: left;
+}
+.centrar{
+    text-align: center;
+    margin: 10px;    
+}
+.centrar .imagen1{
+    width: 30%;
+    height: auto;
+}
+iframe{
+    width: 50vw;
+    height: 30vw;
+}
+.list-art{
+    text-align: left;
+    list-style: square;
+}
+.list-art-carlos{
+    text-align: left;
+    list-style: square;
+    padding: 0 20%;
+}
+
+
+
+table{
+    margin: 50px auto;
+    background-color: white;
+    border-collapse: collapse;
+    text-align: left;
+    width: 60%;
+}
+th{
+    text-align: center;
+    border: solid 1px black;
+    padding: 10px;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+td{
+    border: solid 1px black; 
+}
+li{
+    padding: 5px;
+}
+tr:nth-child(even){
+    background-color: #ebebeb;
+}
+
 /* Encabezado, barra de navegación */
-header {
+#idheader {
     background-color:var(--color-azuloscuro);
     text-align: center;
     padding: 35px 0 20px;
 }
 
-header ul,
-footer ul {
+#idheader ul, #idfooter ul {
     list-style: none;
     padding: 0;
     margin: 8px 0 0;
 }
 
-header li,
-footer li {
+#idheader li,
+#idfooter li {
     display: inline-block;
     margin: 8px;
 }
@@ -220,7 +281,7 @@ a.novedades:active {
 }
 
 /* Footer, Pié de página */
-footer {
+#idfooter {
     background-color: var(--color-gris1);
     color: var(--color-celeste-1);
     font-weight: 600;
@@ -256,6 +317,7 @@ footer {
     background-color: var(--color-azuloscuro);
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
     transition: .2s;
+    border-radius: 10%;
 }
 
 .contenedor-redes ul li a:hover{
