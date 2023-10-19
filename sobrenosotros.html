@@ -12,31 +12,11 @@
 </head>
 
 <body>
-<!--
-    <header>
-        <div class="contenedor-header">
-            <a class="nav" href="index.html"> <img src="img/Tecnosfera2.png" width="150" alt="Tecnósfera">
-                <nav>
-                    <ul>
-                        <li><a class="nav" href="catalogo.html">Noticias</a></li>
-                        <li><a class="nav" href="sobrenosotros.html">Nosotros</a></li>
-                        <li><a class="nav" href="contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
-                <form class="buscar" action="" method="GET">
-                    <label for="busqueda"></label>
-                    <input id="busqueda" name="busqueda" type="text" placeholder="Buscá tu artículo">
-                    <button id="buscar" name="buscar" aria-label="buscar contenido"><i
-                            class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
-        </div>
-    </header>
--->
-<header id="idheader"></header>
-    <main role="main">
-        <section id="novedades">
+    <header id="idheader"></header>
+    <main> <!-- CAmbio -->
+        <section> <!-- Cambio de nombre-->
             <h1>Nuestro equipo</h1>
-            <div class="contenedor-novedades">
+            <div class="contenedor-tarjetas"> <!-- Cambio / Faltan div-->
                 <article class="card">
                     <div class="face front">
                         <img src="img/hacker3.png" alt="Hacker">
@@ -44,12 +24,11 @@
                     </div>
                     <div class="face back">
                         <h2>Carlos</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius harum molestiae iste, nihil
-                            doloribus fugiat distinctio ducimus maxime totam nulla fuga odio non aperiam eos?</p>
+                        <p>"Lo moderno y lo ancestral, la tecnología y la Alkimia, van de la mano formando un Tao, así es mi camino, una en cada mano y a cada lado del corazón"</p>
                         <div class="link">
-                            <a href="https://www.linkedin.com/in/carlos-rodriguez-391568155/"
-                                target="_blank">Linkedin</a>
+                            <a href="https://www.linkedin.com/in/carlos-rodriguez-391568155/" target="_blank">Linkedin</a>
                         </div>
+                    </div>
                 </article>
                 <article class="card">
                     <div class="face front">
@@ -58,8 +37,7 @@
                     </div>
                     <div class="face back">
                         <h2>Pablo</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius harum molestiae iste, nihil
-                            doloribus fugiat distinctio ducimus maxime totam nulla fuga odio non aperiam eos?</p>
+                        <p>"El arte desafía a la tecnología y la tecnología inspira al arte"</p>
                         <div class="link">
                             <a href="https://www.linkedin.com/in/pablo-sebastian-ariza/" target="_blank">Linkedin</a>
                         </div>
@@ -75,8 +53,9 @@
                         <p>Cartógrafo e Hidrógrafo de profesión. <br> Programador por pasión
                         </p>
                         <div class="link">
-                            <a href="https://www.linkedin.com/in/pedro-eugenio-unzue/" target="_blank">Linkedin</a>
+                            <a href="https://www.linkedin.com/" target="_blank">Linkedin</a>
                         </div>
+                    </div>
                 </article>
                 <article class="card">
                     <div class="face front">
@@ -85,41 +64,39 @@
                     </div>
                     <div class="face back">
                         <h2>Pedro</h2>
-                        <p>Nadar es mi gran pasión y mi terapia</p>
+                        <p>El mar, mi lugar en el mundo</p>
                         <p>"La suerte es una combinación de oportunidad y preparación..."</p>
                         <div class="link">
                             <a href="https://www.linkedin.com/in/pedro-eugenio-unzue/" target="_blank">Linkedin</a>
                         </div>
+                    </div>
                 </article>
-
-
             </div>
         </section>
-        <section id="sobrenosotros">
-            <div>
-                <p>Somos un grupo de estudiantes, del curso Full Stack con Python del programa Codo a Codo.</p>
-                <p>Utilizando metodología de Scrum, hemos coordinado la realización del Trabajo Práctico propuesto en el curso.</p>
-                <p>Las conocimientos utilizadados: HTML, CSS, GRID, Bootstrap y Java Script.</p>
+        <section>
+            <div class="sobrenosotros">
+                <div class="nosotrosTexto">
+                    <p>Somos un grupo de estudiantes, del curso Full Stack con Python, del programa Codo a Codo.</p>
+                    <p>Utilizando metodología de Scrum, hemos coordinado la realización del Trabajo Práctico propuesto en el
+                        curso, organizandonos por medio de Jira.</p>
+                    <p>Los conocimientos utilizadados: HTML, CSS, GRID, Bootstrap y Java Script.</p>
+                    <p>Documentación del Proyecto y el enlace a la gestión del equipo por Jira.</p>
+                </div>
+                <div> <!-- Cambio -->
+                    <a href="img/Tarea - Documentación Preliminar de un Proyecto Web.pdf" target="_blank"><img
+                            src="img/pdf.png" width="70px" alt="Documento pdf"><br>Enlace a Documentación</a>
+                </div>
+                <div>
+                    <a href="https://produccionesalkimia.atlassian.net/jira/software/projects/TFSPCG/boards/2/backlog?atlOrigin=eyJwIjoiYWRtaW4iLCJpIjoiOGE0ZjJiNWJiMDQwNDNmOGFkODZmNTg4MDc5MTdkYTgifQ%3D%3D&cloudId=0f002c81-1fa7-4cff-990e-0429eed5fe6b&epics=visible"
+                        target="_blank"><img src="img/jira.jpeg" width="70px" alt="Link Jira"><br>Enlace a Jira</a>
+                </div>
             </div>
             <img src="img/tecno1.png" alt="Tecnosfera" width="80%">
         </section>
     </main>
-<!--
-    <footer>
-        <div class="contenedor-redes">
-            <ul>
-                <li><a href="https://www.facebook.com/" target="_blank" class="facebook"><i
-                            class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="https://www.instagram.com" target="_blank" class="instagram"><i
-                            class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://api.whatsapp.com/send?phone=5453325562&text=Hola,%20quisiera%20informacion%20sobre%20su%20producto"
-                        class="whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
-            </ul>
-        </div>
-    </footer>
--->
-<footer id="idfooter"></footer>
-<script src="js/script.js"></script>
+
+    <footer id="idfooter"></footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

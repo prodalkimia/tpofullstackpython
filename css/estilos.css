@@ -19,128 +19,140 @@
 
 body {
     color: var(--color-negro);
-    background-color: var(--color-blanco);
-    margin: 0;
+    background-color: var(--color-blanco);  /* Cambio */
+    margin: 0;                               /* Cambio */
     line-height: 1.5;
 }
 
 section {
-    width: 1250px;
+    max-width: 1250px;                      /* Cambio */
     text-align: center;
-    margin: 25px auto;
+    margin: 2em auto;                      /* Cambio */
 }
 
 h1 {
-    font-size: 36px;
-    font-weight: 400;
+    font-size: 2.5em;                       /* Cambio */
+    font-weight: 500;                       /* Cambio */
+    margin: 0;
 }
 
 h2 {
-    font-size: 16px;
+    font-size: 2em;                         /* Cambio */
     font-weight: 400;
     margin: 0;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 1.5em;                       /* Cambio */
     font-weight: 400;
     margin: 0;
 }
-
+/* Código unificado */
 .autor{
     text-align: center;
 }
+
 .container-art{
-    max-width: 1400px;    
-    margin: 20px;
-    
+    max-width: 80vw;                    /* Cambio */
+    margin: 1.25em;                      /* Cambio */
 }
+
 .container-art h1,h2{
     text-align: center;
 }
+
 .container-art p{
     text-align: left;
 }
+
 .centrar{
     text-align: center;
-    margin: 10px;    
+    margin: 0.625em;                        /* Cambio */
 }
+
 .centrar .imagen1{
     width: 30%;
     height: auto;
 }
+
 iframe{
     width: 50vw;
     height: 30vw;
+    border: 0px;
 }
+
 .list-art{
     text-align: left;
     list-style: square;
 }
+
 .list-art-carlos{
     text-align: left;
     list-style: square;
     padding: 0 20%;
 }
 
-
-
 table{
-    margin: 50px auto;
+    margin: 3.125em auto;                       /* CAmbio */
     background-color: white;
     border-collapse: collapse;
     text-align: left;
     width: 60%;
 }
+
 th{
     text-align: center;
     border: solid 1px black;
-    padding: 10px;
+    padding: 0.625em;                          /* Cambio */
     background-color: #000000;
     color: #FFFFFF;
 }
+
 td{
     border: solid 1px black; 
 }
+
 li{
-    padding: 5px;
+    padding: 0.375em;                          /* Cambio */
 }
+
 tr:nth-child(even){
     background-color: #ebebeb;
 }
 
 /* Encabezado, barra de navegación */
 #idheader {
-    background-color:var(--color-azuloscuro);
+    display: grid;                          /* Cambio */
+    background-color: var(--color-azuloscuro);
     text-align: center;
-    padding: 35px 0 20px;
+    padding: 2em 0.5em 1em;                     /* Cambio */
 }
 
-#idheader ul, #idfooter ul {
+#idheader ul, 
+#idfooter ul {
     list-style: none;
     padding: 0;
-    margin: 8px 0 0;
+    margin: 0.5em 0 0;                      /* Cambio */
 }
 
 #idheader li,
 #idfooter li {
     display: inline-block;
-    margin: 8px;
+    margin: 0.5em 0 0;                      /* Cambio */
 }
 
 .contenedor-header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;                          /* Cambio */
+    grid-template-columns: 1fr 3fr 1fr;   /* Cambio */
+    grid-column-gap: 0.5em;                   /* Cambio */
     align-items: center;
-    width: 1250px;
-    margin: 0 auto;
 }
 
 /* Links barra de navegación */
 a.nav:link, a.nav:visited {
     color: var(--color-blanco);
     display: inline-block;
-    margin: 0 16px;
+    margin: 0 1em;                          /* Cambio */
 }
 
 a.nav:hover, a.nav:active {
@@ -149,35 +161,52 @@ a.nav:hover, a.nav:active {
 
 /* Sección de Bienvenida y Novedades */
 #bienvenida {
-    height: 650px;
-
-    background-image: url('../img/tecno11B.png') ;
+    height: 85vh;                                       /* Cambio */
+    display: grid;                                      /* Cambio */
+    grid-template-columns: 1fr;                         /* Cambio */
+    justify-items: center;                              /* Cambio */
+    align-content: center;                              /* Cambio */
+    background-image: url('../img/tecno11B.png');
     background-repeat: no-repeat;
-    background-size: cover;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background-size:contain;                           /* Cambio */
+    background-position-x: center;                      /* Cambio */
+    background-position-y: center;                      /* Cambio */
+    line-height: 1;                                     /* Cambio */
+    /*display: flex;*/                                  /* Cambio */
+    /*flex-direction: column;                              Cambio 
+    justify-content: center;                               Cambio */
 }
 
 .bienvenida-titulo {
     background-color: rgba(38, 36, 43, 0.5);
+    /*background-size: contain;                           /* Cambio */
     color: var(--color-celeste-1);
-    padding: 32px;
+    padding: 1em;                                       /* Cambio */
 }
 
 /* Novedades */
-.contenedor-novedades {
-    display: flex;
-    gap: 32px;
-    flex-wrap: wrap;
+.contenedor-novedades{
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 0.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;             /* Cambio */
+    justify-content: space-around;
+    gap: 2em                                            /* Cambio */
+}
+
+.contenedor-novedades h2 {                              /* CAmbio */
+    margin: 0.5em 0 0;
+}
+
+.contenedor-novedades h3 {                              /* Cambio */
+    margin: 0.5em 0;
 }
 
 article {
-    flex-basis: 247px;
+    flex-basis: 15.5em;                          /* Cambio */
     flex-grow: 1;
     flex-shrink: 1;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -188,38 +217,44 @@ a.novedades:visited {
     display: block;
     color: var(--color-negro);
     text-decoration: none;
-    border: 3px solid var(--color-celeste-2);
-    padding: 12px 24px;
-    border-radius: 16px;
+    border: 3px solid var(--color-azulverdo);
+    padding: 0.75em 1.5em;
+    border-radius: 1em;                                 /* Cambio */
+    box-shadow: 0.375em -0.375em 0.625em var(--color-azuloscuro); /* Cambio */
+    background: linear-gradient(var(--color-celeste-1),var(--color-blanco));
 }
 
 a.novedades:hover,
 a.novedades:active {
-    background-color: var(--color-celeste-2);
+    animation: cambiarColor;                        /* Cambio */
+    animation-duration: 800ms;                      /* Cambio */
+    background: var(--color-azulverdo);
     border: 3px solid var(--color-negro);
+    font-style: italic;
+    font-weight: 500;
+    color:var(--color-blanco); 
 }
 
 /* Tarjetas */
-
 .card {
-    position:relative;
-    width: 300px;
-    height: 350px;
-    margin: 20px;}
+    position: relative;
+    width: 100%;                                    /* Cambio */
+    height: 50vh;                                   /* Cambio  350px*/
+}
 
 .card .face {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    border-radius: 10px;
+    border-radius: 1em;                 /*Cambio*/
     overflow: hidden;
-    transition: .5s;
+    transition: 300ms;                  /*Cambio*/
 }
 
 .card .front {
-    transform: perspective(600px) rotateY(0deg);
-    box-shadow: 0 5px 10px var(--color-negro);
+    transform: perspective(600px) rotateY(0deg);      
+    box-shadow: 0.375em 0.625em 1.25em var(--color-azuloscuro); /* Cambio */
 }
 
 .card .front img {
@@ -233,8 +268,8 @@ a.novedades:active {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 45px;
-    line-height: 45px;
+    height: 2.2em;                                      /* Cambio */
+    line-height: 2.2em;                                 /* Cambio */
     color: var(--color-blanco);
     background: rgba(0, 0, 0, 0.5);
     text-align: center;
@@ -242,20 +277,20 @@ a.novedades:active {
 
 .card .back {
     transform: perspective(600px) rotateY(180deg);
-    background: var(--color-azuloscuro);
-    padding: 15px;
+    background-image: radial-gradient(var(--color-azuloscuro),var(--color-gris1)); /* Cambio */
+    padding: 0.5em;
     color: var(--color-blanco);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0.375em 0.625em 1.25em var(--color-azuloscuro);
 }
 
 .card .back .link {
     border-top: solid 1px var(--color-blanco);
-    height: 50px;
-    line-height: 50px;
+    height: 2.6em;
+    line-height: 2.5em;
 }
 
 .card .back .link a {
@@ -263,13 +298,15 @@ a.novedades:active {
 }
 
 .card .back h3 {
-    font-size: 30px;
-    margin-top: 20px;
+    font-size: 1.5em;
+    margin-top: 1em;
     letter-spacing: 2px;
 }
 
 .card .back p {
     letter-spacing: 1px;
+    font-size: 0.9em;
+    margin: 0;
 } 
 
 .card:hover .front {
@@ -282,46 +319,45 @@ a.novedades:active {
 
 /* Footer, Pié de página */
 #idfooter {
-    background-color: var(--color-gris1);
+    background-image: linear-gradient(var(--color-gris1),var(--color-azuloscuro)); /* Cambio */
+    font-size: 1em;                 /* Cambio */
     color: var(--color-celeste-1);
     font-weight: 600;
     line-height: 1.8;
     text-align: center;
-
-    padding-top: 75px;
-    height: 250px;
+    padding-top: 4.0em;             /* Cambio */
+    height: 15.5em;                 /* Cambio */
 }
-
 
 .contenedor-redes{
     position: relative;
-    top:35%;
-    display: flex;
+    top:25%;                        /* Cambio */
+    display: grid;                  /* Cambio */
     justify-content: center;
-    align-items: center;
+    /*align-items: center;*/
 }
 
 .contenedor-redes ul li{
     display: inline-block;
-    margin: 0px 30px 0px 10px;
-    width: 50px;
-    height: 50px;
+    margin: 0em 2em 0em 0.5em;      /* Cambio */
+    width: 3.1em;                   /* Cambio */
+    height: 3.1em;                  /* Cambio */
     text-align: center;
 }
 
 .contenedor-redes ul li a{
     display: block;
-    padding: 0 10px;
-    line-height: 40px;
+    padding: 0 0.625em;
+    line-height: 2.5em;
     color: var(--color-azulverdo);
-    background-color: var(--color-azuloscuro);
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    background-color: var(--color-gris1);               /* Cambio */
+    box-shadow: 0.375em 0.375em 0.375em 0px rgba(0, 0, 0, 0.75);
     transition: .2s;
     border-radius: 10%;
 }
 
 .contenedor-redes ul li a:hover{
-    transform: translatey(-5px) scale(1.1);
+    transform: translatey(-00.375em) scale(1.1);
 }
 
 .contenedor-redes ul li .facebook:hover{
@@ -339,16 +375,16 @@ a.novedades:active {
 
 /* Formulario de búsqueda */
 .buscar > input {
-    margin-top: 10px;
-    padding: 12px 15px;
-    border-radius: 10px;
+    margin-top: 0.8em;
+    padding: 0.75em 1em;
+    border-radius: 0.625em;
     border: 3px solid var(--color-celeste-2);
 }
 
 .buscar > button {
-    margin-top: 10px;
-    padding: 12px 15px;
-    border-radius: 10px;
+    margin-top: 0.8em;
+    padding: 0.75em 1em;
+    border-radius: 0.625em;
     background-color: var(--color-azulverdo);
     border: 3px solid var(--color-celeste-2);
 }
@@ -358,7 +394,7 @@ a.novedades:active {
     outline: none;
     border: 3px solid var(--color-azulverdo);
 }
-
+/* Se puede sacar formulario? */
 /* Login, Contacto, Registro */
 .formulario label {
     display: block;
@@ -403,15 +439,16 @@ a.novedades:active {
     border: none;
 }
 
-/* Exito */
+/* Exito 
 #exito {
     min-height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+*/
 /* articulos, detalle */
+/*
 #articulos {
     display: flex;
     justify-content: center;
@@ -470,9 +507,9 @@ a.novedades:active {
 }
 
 #articulos p {
-    line-height: 22px;
+    line-height: 1.5em;                 Cambio 
 }
-
+*/
 #articulos button {
     background-color: var(--color-celeste-1);
     font-size: 18px;
@@ -481,9 +518,9 @@ a.novedades:active {
     cursor: pointer;
 
     color: var(--negro);
-    border: 2px solid var(--color-azulverdo);
-    border-radius: 16px;
-    padding: 15px 25px;
+    border: 0.125em solid var(--color-azulverdo);
+    border-radius: 1em;
+    padding: 1em 1.6em;
 }
 
 #articulos button:hover {
@@ -492,6 +529,7 @@ a.novedades:active {
 }
 
 /* Catálogo */
+/*
 #catalogo table {
     margin: 0 auto;
     width: 1250px;
@@ -520,8 +558,9 @@ a.novedades:active {
 #catalogo tr:hover td {
     background-color: var(--color-azulverdo);
 }
-
+*/
 /* Sobre Nosotros */
+/*
 .contenido {
     display: flex;
     flex-direction: row;
@@ -566,4 +605,86 @@ a.novedades:active {
     margin: 32px auto;
     border: none;
     height: 600px;
+}
+*/
+
+.sobrenosotros {
+    text-align: center;
+    color: var(--color-negro);
+    font-size: 1.2em;
+    font-family: 'moserrat', sans-serif;
+    font-style: oblique;
+    font-weight: 500;
+    max-width: 1250px;
+    margin: 3em 1em 3em;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+.nosotrosTexto {
+    grid-column: 1 / 3;
+}
+/* Fotos de las notas*/
+.img-nota {
+    transform: perspective(600px);
+    box-shadow: 5px 10px 20px var(--color-azuloscuro); /* Cambio */
+    border-radius: 1em;
+    position: static;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-nota:hover {
+    transform: scale(1.1,1.1);
+    transition: 200ms;
+}
+
+.contenedor-tarjetas{
+    margin-left: 1em;
+    margin-right: 1.5em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+}
+
+@keyframes cambiarColor {
+    from {background-color: var(--color-azuloscuro);}
+    to {background: var(-color-gris1);}
+}
+
+@media screen and (max-width: 1060px){
+    #bienvenida {
+        height: 65vw;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .contenedor-novedades,
+    .contenedor-tarjetas{
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-evenly;
+    }
+    .contenedor-header{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-content: center;
+    }
+    .sobrenosotros {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    .nosotrosTexto {
+         grid-column: 1 / 2;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .contenedor-novedades,
+    .contenedor-tarjetas{
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
 }
