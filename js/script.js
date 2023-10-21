@@ -28,6 +28,9 @@ let footer = `
                 <li><a href="https://api.whatsapp.com/send?phone=5453325562&text=Hola,%20quisiera%20informacion%20sobre%20su%20producto" class="whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
             </ul>
             <p>@Todos los derechos reservados 2023 - Tecnosfera</p> <!-- Sacar de la lista -->
+
+            <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+            <script src="https://mediafiles.botpress.cloud/5b12978f-523a-47f0-9f68-367ec51d2d8e/webchat/config.js" defer></script>
 </div>
 `
 document.getElementById("idfooter").innerHTML = footer
