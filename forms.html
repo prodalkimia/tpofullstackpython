@@ -16,21 +16,21 @@
     </div>
 
     <div class="container">
-        <form class="row g-2" action="#" method="post">
+        <form name="formulario" class="row g-2">
 
             <div class="col-6">
                 <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" id="nombre" class="form-control" placeholder="Nombre" required>
+                <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre">
             </div>
 
             <div class="col-6">
                 <label for="apellido" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
+                <input type="text" name="apellido" class="form-control" id="apellido" placeholder="Apellido">
             </div>
 
             <div class="col-sm-6 col-12">
                 <label for="email" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="email" placeholder="email@ejemplo.com" required>
+                <input type="email" name="email" class="form-control" id="email" placeholder="email@ejemplo.com">
             </div>
             <div class="col-sm-6">
                 <label for="fecha" class="form-label">Fecha de nacimiento</label>
@@ -38,18 +38,18 @@
             </div>
 
             <div class="col-6">
-                <label for="pais" class="form-label">País</label>
+                <label for="pais" class="form-label">País(opcional)</label>
                 <input type="text" class="form-control" id="pais" placeholder="País" required>
             </div>
 
             <div class="col-6">
-                <label for="ciudad" class="form-label">Ciudad</label>
+                <label for="ciudad" class="form-label">Ciudad(opciomal)</label>
                 <input type="text" class="form-control" id="ciudad" placeholder="Ciudad" required>
             </div>
 
             <div class="col-sm-6">
                 <label for="rama" class="form-label">Campo tecnológico favorito</label>
-                <input type="text" class="form-control" list="lista" placeholder="Ej: Desarrollo web Full-Stack" required> <!-- Falta type-->
+                <input type="text" name="lista" class="form-control" list="lista" placeholder="Ej: Desarrollo web Full-Stack">
                 <datalist id="lista">
                     <option value="Desarrollo web Full-Stack"></option> <!-- Falta cierre -->
                     <option value="Desarrollo web Front-End"></option>
@@ -61,7 +61,7 @@
                     <option value="Seguridad informática"></option>
                     <option value="Administrador de base de datos"></option>
                     <option value="Otra"></option>
-                </datalist>
+                    </datalist>
             </div>
 
             <div class="col-sm-6">
@@ -82,12 +82,13 @@
             </div>
 
             <div class="col-12 text-center mb-5">
-                <button type="submit" class="btn btn-primary">Enviar</button>
-                <button type="reset" class="btn btn-primary">Borrar</button>
+                <button type="submit" class="btn btn-primary" onclick="validarformulario()">Enviar</button>
+                <button type="reset" class="btn btn-primary" >Borrar</button>
             </div>
         </form>
     </div>
 <footer id="idfooter"></footer>
 <script src="js/script.js"></script>
+<script src="js/validacion.js"></script>
 </body>
 </html>
