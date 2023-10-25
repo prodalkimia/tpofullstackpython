@@ -495,7 +495,7 @@ a.novedades:active {
     box-shadow: 0.375em 0.625em 1.25em var(--color-azuloscuro);
     border-radius: 1em;
     font-family: 'moserrat', sans-serif;;
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: 500;
 }
 
