@@ -442,9 +442,7 @@ a.novedades:active {
     background-color: var(--color-celeste-1);
     font-size: 18px;
     font-weight: bold;
-
     cursor: pointer;
-
     color: var(--negro);
     border: 0.125em solid var(--color-azulverdo);
     border-radius: 1em;
@@ -478,7 +476,7 @@ a.novedades:active {
 /* Fotos de las notas*/
 .img-nota {
     transform: perspective(600px);
-    box-shadow: 5px 10px 20px var(--color-azuloscuro);
+    box-shadow: 0.375em 0.625em 1.25em var(--color-azuloscuro);
     border-radius: 1em;
     position: static;
     width: 100%;
@@ -487,14 +485,18 @@ a.novedades:active {
 }
 
 .fotousuario {
-    transform: perspective(600px);
-    box-shadow: 5px 10px 20px var(--color-azuloscuro); /* Cambio */
+    display: inline-block;
+    width: 35vmax;
+    border-width: 0.2em;
+    border-color: var(--color-gris1);
+    border-style: solid;
+    padding: 1em 0 1em;
+    margin: 1em 0 2.5em;
+    box-shadow: 0.375em 0.625em 1.25em var(--color-azuloscuro);
     border-radius: 1em;
-    position: static;
-    width: 40%;
-    height: 100%;
-    object-fit: cover;
-    align-items: center;
+    font-family: 'moserrat', sans-serif;;
+    font-size: 1em;
+    font-weight: 500;
 }
 
 .img-nota:hover {
